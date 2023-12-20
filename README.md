@@ -1,64 +1,33 @@
-# AI Powered PDF QnA System
+# AI-Powered PDF QnA System
 
-The AI Powered PDF QnA System is an advanced solution designed to extract answers to user queries from PDF documents by leveraging the synergy of Langchain, Pinecone, and Streamlit technologies. This application uses cutting-edge natural language processing (NLP) models and vector database indexing for efficient and accurate context-aware answers.
+![Application Preview](architecture.png)
 
-## System Architecture
+## Overview
 
-![System Architecture](architecture.png)
+This project is an AI-powered system that allows users to upload PDF documents and ask questions based on the content of the documents. The system then processes the PDF, extracts the text, and uses a combination of Langchain, Pinecone, and Streamlit to provide relevant answers.
 
-The system's architecture integrates several key components:
+## Architecture
 
-### Components:
+The system leverages a sophisticated architecture combining the latest in natural language processing and vector database technologies.
 
-- **Text Splitter**: Splits the input PDF or text document into smaller chunks suitable for processing by the embedding generator.
+- Text from PDFs is extracted and split into manageable chunks.
+- These chunks are then embedded into a high-dimensional space using embedding models from OpenAI or Sentence Transformers.
+- The embeddings are stored in a Pinecone vector database, which allows for efficient similarity search when queries are made.
+- Upon receiving a query, the system retrieves the most relevant document chunks and uses an AI model like GPT-3 or GPT-4 to generate an answer.
 
-- **Embedding Generator**: Utilizes models from OpenAI or Sentence Transformers to generate embeddings (vector representations) for each text chunk, enabling efficient similarity comparison and retrieval.
+## Preview
 
-- **Pinecone**: A vector database that stores and manages the embeddings of the document chunks. It facilitates the retrieval of the most relevant chunks based on query embeddings.
+![Application Preview](application_preview.png)
 
-- **QnA Model**: Employs advanced question answering models like GPT-3 or GPT-4, which use the provided query and context to generate accurate answers.
+Here is a preview of the application in action.
 
-- **Langchain**: Provides the structure and integration for the QnA model and memory management, ensuring a seamless flow of data and context throughout the system.
+## How to Run
 
-- **Streamlit**: Powers the interactive and user-friendly web interface, enabling users to upload documents and enter queries with ease.
+To run this application on your local machine, follow these steps:
 
-### Workflow:
+1. Clone the repository to your local machine.
 
-1. Upload the PDF/text document to the system.
-2. The document is split into chunks by the Text Splitter.
-3. The Embedding Generator creates embeddings for each chunk.
-4. Embeddings are stored in the Pinecone vector database.
-5. Upon a user query, relevant document chunks are retrieved from Pinecone.
-6. The QnA model uses the retrieved context along with the query to generate an answer.
+2. Install the required dependencies using the following command:
 
-## How to Use
-
-To interact with the AI Powered PDF QnA System:
-
-1. Upload a PDF document through the Streamlit interface.
-2. Enter your question in the provided query box.
-3. The system processes your query and returns an answer using context from the uploaded document.
-
-## Technologies
-
-This project is built using the following technologies:
-
-- **Langchain**: A library that enables the creation of powerful language applications using LLMs (Large Language Models).
-
-- **Pinecone**: A scalable vector database service that allows for efficient similarity search and data retrieval.
-
-- **Streamlit**: An open-source app framework for Machine Learning and Data Science teams to create beautiful data applications.
-
-## Future Enhancements
-
-- **UI/UX Improvements**: Further enhance the user interface and experience.
-- **Model Optimization**: Continuously update the QnA model to incorporate the latest NLP research.
-- **Scalability**: Optimize the system to manage larger documents and more simultaneous user queries.
-
-## Contribution
-
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request with your improvements.
-
-## License
-
-This project is made available under the [MIT License](LICENSE).
+   ```sh
+   pip install -r requirements.txt
