@@ -1,6 +1,6 @@
 # AI-Powered PDF QnA System
 
-![Application Preview](architecture.png)
+![Application Preview](https://i.imgur.com/gI2Ajrj.png)
 
 ## Overview
 
@@ -17,7 +17,7 @@ The system leverages a sophisticated architecture combining the latest in natura
 
 ## Preview
 
-![Application Preview](Screenshot 2023-12-20 065031.png)
+![Application Preview](https://i.imgur.com/qnIKjZs.png)
 
 Here is a preview of the application in action.
 
