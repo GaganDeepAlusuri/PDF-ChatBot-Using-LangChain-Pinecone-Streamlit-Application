@@ -17,7 +17,7 @@ The system leverages a sophisticated architecture combining the latest in natura
 
 ## Preview
 
-![Application Preview](application_preview.png)
+![Application Preview](Screenshot 2023-12-20 065031.png)
 
 Here is a preview of the application in action.
 
