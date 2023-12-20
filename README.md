@@ -33,4 +33,4 @@ To run this application on your local machine, follow these steps:
    pip install -r requirements.txt
 3. Run the Streamlit application
    ```sh
-   Run the Streamlit application
+   python -m streamlit run app3.py
