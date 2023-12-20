@@ -31,3 +31,6 @@ To run this application on your local machine, follow these steps:
 
    ```sh
    pip install -r requirements.txt
+3. Run the Streamlit application
+   ```sh
+   Run the Streamlit application
